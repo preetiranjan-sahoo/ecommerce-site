@@ -2,19 +2,18 @@ import React from "react";
 const subTitle = "Save The Day";
 const title = (
   <h2 className="title">
-    {/* Join on Day Long Free Workshop for{" "} */}
-    Big billion chal raha hai{" "}
+    Join on Day Long Free Workshop for {/* Big billion chal raha hai{" "} */}
     <b>
-      Chutiye <span> jaldi register kar</span>
-      {/* Advance <span> Mastering</span> */}
+      {/* Chutiye <span> jaldi register kar</span> */}
+      Advance <span> Mastering</span>
     </b>{" "}
-    {/* on Sale */}
-    Sale chalu hai
+    on Sale
+    {/* Sale chalu hai */}
   </h2>
 );
 
-// const desc = "Limited Offer";
-const desc = "Offer Khatam Ho jayega Jaldi kar";
+const desc = "Limited Offer";
+// const desc = "Offer Khatam Ho jayega Jaldi kar";
 
 const Register = () => {
   return (

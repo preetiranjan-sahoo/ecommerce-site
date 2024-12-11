@@ -40,7 +40,7 @@ const NavItems = () => {
                 <div className="logo">
                   <Link to={"/"}>
                     {/* <img src={logo} alt="" /> */}
-                    <h2>Work On Progress...</h2>
+                    <h2>Under Development</h2>
                   </Link>
                 </div>
               </div>

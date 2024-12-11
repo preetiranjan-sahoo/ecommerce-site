@@ -9,31 +9,36 @@ import "././assets/css/animate.css";
 import "././assets/css/style.min.css";
 
 import App from "./App.jsx";
-import { HashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home/Home.jsx";
 import Blog from "./blog/Blog.jsx";
 import Shop from "./shop/Shop.jsx";
 
-const router = HashRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/blog",
+          element: <Blog />,
+        },
+        {
+          path: "/shop",
+          element: <Shop />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/blog",
-        element: <Blog />,
-      },
-      {
-        path: "/shop",
-        element: <Shop />,
-      },
-    ],
-  },
-]);
+    basename: "/ecommerce-site",
+  }
+);
 
 createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />

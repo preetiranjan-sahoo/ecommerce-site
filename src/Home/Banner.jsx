@@ -3,24 +3,28 @@ import { Link } from "react-router-dom";
 import productData from "../products.json";
 import SelectedCategory from "../components/SelectedCategory";
 
-const title = <h2>Bahut sare Products hai tu tera wala search kar laude</h2>;
-const desc = "Mere pass sab type ka collection hai";
-// const desc = "We have all type of collection for products";
+const title = (
+  <h2>
+    Search Your One Product from <span>Thousands</span> of Products
+  </h2>
+);
+// const desc = "Mere pass sab type ka collection hai";
+const desc = "We have all type of collection for products";
 const bannerList = [
   {
     iconName: "icofont-users-alt-4",
-    text: "Bahut customer he mera",
-    // text: "1.5 Million Customers",
+    // text: "Bahut customer he mera",
+    text: "1.5 Million Customers",
   },
   {
     iconName: "icofont-notification",
-    text: "Bahut merchent bhi hai bro",
-    // text: "More then 2000 Marchent",
+    // text: "Bahut merchent bhi hai bro",
+    text: "More then 2000 Marchent",
   },
   {
     iconName: "icofont-globe",
-    text: "Kuchh bhi kharid sakta hai",
-    // text: "Buy Anything Online",
+    // text: "Kuchh bhi kharid sakta hai",
+    text: "Buy Anything Online",
   },
 ];
 
@@ -50,7 +54,7 @@ const Banner = () => {
               type="text"
               name="search"
               id="search"
-              placeholder="Search kar tera product"
+              placeholder="Search your product here"
               value={searchInput}
               onChange={handleSearch}
             />

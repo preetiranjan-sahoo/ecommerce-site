@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const title = "80 hajar se upar customers hai";
-// const title = "More Then 60,000 Customers";
+// const title = "80 hajar se upar customers hai";
+const title = "More Then 60,000 Customers";
 
-const desc =
-  " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum facere quaerat placeat cum sunt cupiditate quasi aliquam nobis quam nesciunt!";
 // const desc =
-//   "Buy products on your any device with our app & enjoy your time what you want. Just download & install & start to shopping";
+//   " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum facere quaerat placeat cum sunt cupiditate quasi aliquam nobis quam nesciunt!";
+const desc =
+  "Buy products on your any device with our app & enjoy your time what you want. Just download & install & start to shopping";
 
 const clientsList = [
   {
